@@ -1,0 +1,26 @@
+#generate employee tax
+print('enter the employee name')
+name=input()
+print('enter the basic salary of the employee')
+bs=int(input())
+print('enter the daily allowance of the employee')
+da=int(input())
+print('enter the travelling allowence of the employee')
+ta=int(input())
+print('enter the house rental allowence of the employee')
+hra=int(input())
+netsalary=(bs+da+ta+hra)
+if netsalary >100000:
+    tax=netsalary*10/100
+    print('tax:',tax)
+elif netsalary>50000:
+    tax=netsalary*5/100
+    print('tax:',tax)
+elif netsalary>40000:
+    tax=netsalary*4/100
+    print('tax:',tax)
+elif netsalary>20000:
+    tax=netsalary*2/100
+    print('tax:',tax)
+if netsalary<20000:
+    print('tax=0')
